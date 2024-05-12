@@ -4,6 +4,7 @@
 // Documents
 const greetH1 = document.getElementById('greet');
 const dateH2 = document.getElementById('date');
+const searchInp = document.getElementById('search');
 
 // Date
 setInterval(() => {
@@ -22,3 +23,13 @@ setInterval(() => {
 
     dateH2.innerHTML = `${time} - ${date}`
 }, 1000)
+
+searchInp.addEventListener('keyup', (event) => {
+    if (event.key != 'Enter') return
+
+    const value = searchInp.value
+    if (value.length <= 0 ) return
+
+    searchInp.value = ''
+    window.location = 'https://www.google.com/search?q=' + value
+})
