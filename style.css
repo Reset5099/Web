@@ -61,6 +61,19 @@ a:hover {
   color: #fcfcfcdf;
 }
 
+input {
+  height: 27px;
+  width: 90%;
+
+  font-size: 1.4em;
+  font-family: 'MapleMono';
+
+  justify-content: center;
+  text-align: center;
+
+  border-radius: 5px;
+}
+
 img {
   width: 407px;
   height: 600px;
